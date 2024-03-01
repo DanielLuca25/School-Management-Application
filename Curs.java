@@ -48,15 +48,31 @@ import java.util.List;
                     noualungime);
         }
 
-    @Override
-    public void RemoveStudent(Student student) {
-        //
-    }
+	  @Override
+	public void RemoveStudent(Student student) {
+		for (int i = 0; i < studenti.length; i++) {
+			if (studenti[i].equals(student)) {
+				Student[] updatedStudents = new Student[studenti.length - 1];
+				System.arraycopy(studenti, 0, updatedStudents, 0, i);
+				System.arraycopy(studenti, i + 1, updatedStudents, i, studenti.length - i - 1);
+				studenti = updatedStudents;
+				return;
+			}
+		}
+		System.out.println("Student " + student.getNumeIntreg() + " nu a fost gasit in curs");
+	}
 
-    @Override
-    public void UpdateStudent(Student student) {
-        //
-    }
+	@Override
+	public void UpdateStudent(Student student) {
+		for (int i = 0; i < studenti.length; i++) {
+			if (studenti[i].equals(student)) {
+				studenti[i] = student;
+				return;
+			}
+		}
+		System.out.println("Student " + student.getNumeIntreg() + " nu a fost gasit in curs");
+	}
+
 
 
     @Override

@@ -1,3 +1,1 @@
-The application allows for the creation and management of students, professors, and courses. 
-It has functions for adding/removing students from courses, updating managing courses.
-It can be expanded further more to include more advanced features.
+The application allows for the creation and management of students, professors, and courses. It includes functionalities for adding/removing students to/from courses and for updating and managing the existing ones. It can be expanded furthermore to include more advanced features

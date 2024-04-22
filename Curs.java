@@ -24,6 +24,7 @@ import java.util.List;
             this.profu = profu;
             this.studenti = studenti;
         }
+
         public void UpdateProfesor(Profesor profu)
         {
             this.profu = profu;
@@ -40,7 +41,6 @@ import java.util.List;
                 aux[index++] = s;
             }
 
-           // index
             aux[index] = student;
 
             this.studenti = new Student[noualungime];
@@ -97,14 +97,6 @@ import java.util.List;
             return this.nume;
         }
 
-        public void adaugaProfesor(Profesor profesor){
-            this.profu=profesor;
-     }
-
-     public void modificaProfesor(Profesor profesorNou)
-     {
-         this.profu = profesorNou;
-     }
 
     public void stergeProfesor(){
             this.profu=null;

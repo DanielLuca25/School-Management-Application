@@ -22,7 +22,7 @@ public class Main {
         cursuri.AddCurs(cursPCLP);
         //cursuri.StergeCurs(cursAnaliza);
         //cursuri.raportareCursuri();
-
+        
 
         //cursPCLP.AddProfesor(profAnaliza);
         //cursPCLP.StergeProfesor();
@@ -36,6 +36,7 @@ public class Main {
 
         System.out.println();
 
+
         cursPCLP.notareStudent(student1, 10);
         cursPCLP.notareStudent(student2, 8);
         cursPCLP.notareStudent(student4, 6);
@@ -45,5 +46,4 @@ public class Main {
 
         cursPCLP.raportareMedieNote();}
 
-///exceptii citire din fisier hcod
 }
